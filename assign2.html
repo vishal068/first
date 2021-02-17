@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment-2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#panel").click(function(){
+				$("#slider").slideDown("slow");
+			});
+		});		
+	</script>
+	<style type="text/css">
+		#panel{
+			background-color: grey;
+			text-align: center;
+			padding: 10px;
+			border: solid;
+		}
+		#slider{
+			border: solid;
+			border-top: none;
+			font-size: 50px;
+			padding: 100px;
+			background-color: skyblue;
+			height: 100px;
+			text-align: center;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="panel">
+		Click me to slide down panel
+	</div>
+	<div id="slider">
+		Hello World
+	</div>
+</body>
+</html>
